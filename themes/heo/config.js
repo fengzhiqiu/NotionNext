@@ -18,8 +18,8 @@ const CONFIG = {
   HEO_HERO_TITLE_1: '分享科技',
   HEO_HERO_TITLE_2: '分享生活',
   HEO_HERO_TITLE_3: 'TECHINS.XYZ',
-  HEO_HERO_TITLE_4: '新版上线',
-  HEO_HERO_TITLE_5: 'NotionNext4.0 轻松定制主题',
+  HEO_HERO_TITLE_4: '站长推荐',
+  HEO_HERO_TITLE_5: '从0到1新手建站全攻略',
   HEO_HERO_TITLE_LINK: 'https://blog.techins.xyz',
 
   // 英雄区显示三个置顶分类
@@ -104,7 +104,7 @@ const CONFIG = {
     }
   ],
 
-  HEO_SOCIAL_CARD: true, // 是否显示右侧，点击加入社群按钮
+  HEO_SOCIAL_CARD: false, // 是否显示右侧，点击加入社群按钮
   HEO_SOCIAL_CARD_TITLE_1: '交流频道',
   HEO_SOCIAL_CARD_TITLE_2: '加入我们的社群讨论分享',
   HEO_SOCIAL_CARD_TITLE_3: '点击加入社群',
