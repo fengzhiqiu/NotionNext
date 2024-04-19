@@ -15,8 +15,8 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: '分享科技',
-  HEO_HERO_TITLE_2: '分享生活',
+  HEO_HERO_TITLE_1: '分享科技、分享生活',
+  HEO_HERO_TITLE_2: '思考与成长',
   HEO_HERO_TITLE_3: 'TECHINS.XYZ',
   HEO_HERO_TITLE_4: '站长推荐',
   HEO_HERO_TITLE_5: '从0到1新手建站全攻略',
