@@ -37,6 +37,11 @@ export default function SideRight(props) {
 
             <InfoCard {...props} className='w-72' />
 
+            {/* 微信公众号二维码 */}
+            <div>
+              <img src="https://img.techins.xyz/techins/2024/04/40b8a20ad4958d3a8921220f72ba7e41.png" alt="欢迎扫码关注公众号" style="border: 1px solid rgb(229, 231, 235); border-radius: 10px;">
+            </div>
+    
             <div className='sticky top-20 space-y-4'>
 
                 {/* 文章页显示目录 */}
