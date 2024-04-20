@@ -7,6 +7,7 @@ import Live2D from '@/components/Live2D'
 import { AnalyticsCard } from './AnalyticsCard'
 import TouchMeCard from './TouchMeCard'
 import LatestPostsGroupMini from './LatestPostsGroupMini'
+import Image from 'next/image'
 
 const FaceBookPage = dynamic(
   () => {
@@ -37,6 +38,15 @@ export default function SideRight(props) {
 
             <InfoCard {...props} className='w-72' />
 
+            {/* 微信公众号二维码 */}
+            <div>
+              <Image
+                src='/wx_qrcode.png'
+                alt='欢迎扫码关注公众号'
+                style='border: 1px solid rgb(229, 231, 235); border-radius: 10px;'
+              />
+            </div>
+    
             <div className='sticky top-20 space-y-4'>
 
                 {/* 文章页显示目录 */}
