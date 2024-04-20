@@ -5,8 +5,8 @@ const CONFIG = {
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    { title: '欢迎来到我的博客', url: 'https://blog.techins.xyz' },
-    { title: '访问文档中心获取更多帮助', url: 'https://blog.techins.xyz' }
+    // { title: '欢迎来到我的博客', url: 'https://blog.techins.xyz' },
+    // { title: '访问文档中心获取更多帮助', url: 'https://blog.techins.xyz' }
   ],
 
   // 英雄区左右侧组件颠倒位置
@@ -20,12 +20,12 @@ const CONFIG = {
   HEO_HERO_TITLE_3: 'TECHINS.XYZ',
   HEO_HERO_TITLE_4: '站长推荐',
   HEO_HERO_TITLE_5: '从0到1新手建站全攻略',
-  HEO_HERO_TITLE_LINK: 'https://blog.techins.xyz',
+  HEO_HERO_TITLE_LINK: 'https://blog.techins.xyz/category/网站建设',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' },
-  HEO_HERO_CATEGORY_2: { title: '热门文章', url: '/tag/热门文章' },
-  HEO_HERO_CATEGORY_3: { title: '实用教程', url: '/tag/实用教程' },
+  HEO_HERO_CATEGORY_1: { title: '实用工具', url: '/tag/工具' },
+  HEO_HERO_CATEGORY_2: { title: '网站建设', url: '/tag/建站' },
+  HEO_HERO_CATEGORY_3: { title: 'NAS真有用', url: '/tag/NAS' },
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   HEO_HERO_RECOMMEND_POST_TAG: '推荐',
@@ -36,13 +36,11 @@ const CONFIG = {
   HEO_INFOCARD_GREETINGS: [
     '你好！我是',
     '🔍 分享与热心帮助',
-    '🤝 专修交互与设计',
     '🏃 脚踏实地行动派',
     '🏠 智能家居小能手',
-    '🤖️ 数码科技爱好者',
-    '🧱 团队小组发动机'
+    '🤖️ 数码科技爱好者'
   ],
-  HEO_INFO_CARD_URL: 'https://github.com/tangly1024/NotionNext', // 个人资料底部按钮链接
+  HEO_INFO_CARD_URL: '', // 个人资料底部按钮链接
 
   // 用户技能图标
   HEO_GROUP_ICONS: [
