@@ -37,10 +37,6 @@ export default function SideRight(props) {
 
             <InfoCard {...props} className='w-72' />
 
-            
-            <img src='/wx_qrcode.png' alt='欢迎扫码关注公众号' style='border: 1px solid rgb(229, 231, 235); border-radius: 10px;'/>
-            
-    
             <div className='sticky top-20 space-y-4'>
 
                 {/* 文章页显示目录 */}
