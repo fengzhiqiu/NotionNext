@@ -40,11 +40,17 @@ export default function SideRight(props) {
 
             {/* 微信公众号二维码 */}
             <div>
-              <Image
-                src='/wx_qrcode.png'
-                alt='欢迎扫码关注公众号'
-                style='border: 1px solid rgb(229, 231, 235); border-radius: 10px;'
-              />
+                <Image
+                    src='/wx_qrcode.png'
+                    alt='欢迎扫码关注公众号'
+                    width={600} // 需要设置具体数值
+                    height={220} // 需要设置具体数值
+                    layout='responsive' // 添加了响应式布局
+                    style={{
+                      border: '1px solid rgb(229, 231, 235)',
+                      borderRadius: '10px'
+                    }}
+                />
             </div>
     
             <div className='sticky top-20 space-y-4'>
