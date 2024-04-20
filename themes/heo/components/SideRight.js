@@ -39,7 +39,7 @@ export default function SideRight(props) {
 
             {/* 微信公众号二维码 */}
             <div>
-              <img src='/public/wx_qrcode.png' alt='欢迎扫码关注公众号' style='border: 1px solid rgb(229, 231, 235); border-radius: 10px;'/>
+              <img src='/wx_qrcode.png' alt='欢迎扫码关注公众号' style='border: 1px solid rgb(229, 231, 235); border-radius: 10px;'/>
             </div>
     
             <div className='sticky top-20 space-y-4'>
