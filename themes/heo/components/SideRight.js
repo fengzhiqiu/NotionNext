@@ -48,7 +48,7 @@ export default function SideRight(props) {
                     layout='responsive' // 添加了响应式布局
                     style={{
                       border: '1px solid rgb(229, 231, 235)',
-                      borderRadius: '10px'
+                      borderRadius: '.75rem'
                     }}
                 />
             </div>
