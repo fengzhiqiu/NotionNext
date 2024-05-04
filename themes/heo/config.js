@@ -1,7 +1,7 @@
 const CONFIG = {
   HEO_HOME_BANNER_ENABLE: true,
 
-  HEO_SITE_CREATE_TIME: '2024-04-18', // 建站日期，用于计算网站运行的第几天
+  HEO_SITE_CREATE_TIME: '2023-11-19', // 建站日期，用于计算网站运行的第几天
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
@@ -20,7 +20,7 @@ const CONFIG = {
   HEO_HERO_TITLE_3: 'TECHINS.XYZ',
   HEO_HERO_TITLE_4: '站长推荐',
   HEO_HERO_TITLE_5: '从0到1新手建站全攻略',
-  HEO_HERO_TITLE_LINK: 'https://blog.techins.xyz/category/网站建设',
+  HEO_HERO_TITLE_LINK: 'https://techins.xyz/category/网站建设',
 
   // 英雄区显示三个置顶分类
   HEO_HERO_CATEGORY_1: { title: '实用工具', url: '/tag/工具' },
@@ -129,7 +129,7 @@ const CONFIG = {
   HEO_ARTICLE_RECOMMEND: true, // 文章关联推荐
 
   HEO_WIDGET_LATEST_POSTS: true, // 显示最新文章卡
-  HEO_WIDGET_ANALYTICS: true, // 显示统计卡
+  HEO_WIDGET_ANALYTICS: false, // 显示统计卡
   HEO_WIDGET_TO_TOP: true,
   HEO_WIDGET_TO_COMMENT: true, // 跳到评论区
   HEO_WIDGET_DARK_MODE: true, // 夜间模式
