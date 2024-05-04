@@ -42,7 +42,7 @@ export function InfoCard(props) {
                 <div className='flex space-x-3  hover:text-black dark:hover:text-white'>
                     {/* 两个社交按钮 
                     <div className='bg-indigo-400 p-2 rounded-full  transition-colors duration-200 dark:bg-yellow-500 dark:hover:bg-black hover:bg-white'>
-                        <Link href='/about'><GlobeAlt className={'w-6 h-6'} /></Link>
+                        <Link href='/opened'><GlobeAlt className={'w-6 h-6'} /></Link>
                     </div>
                     <div className='bg-indigo-400 p-2 rounded-full w-10 items-center flex justify-center transition-colors duration-200 dark:bg-yellow-500 dark:hover:bg-black hover:bg-white'>
                         {siteConfig('HEO_INFO_CARD_URL', null, CONFIG) && <Link href={siteConfig('HEO_INFO_CARD_URL', null, CONFIG)}>
@@ -80,7 +80,7 @@ function GreetingsWords() {
  * @returns
  */
 function MoreButton() {
-  return <Link href='/about'>
+  return <Link href='/opened'>
         <div className={'group bg-indigo-400 dark:bg-yellow-500 hover:bg-white dark:hover:bg-black hover:text-black dark:hover:text-white flex items-center transition-colors duration-200 py-2 px-3 rounded-full space-x-1'}>
             <ArrowRightCircle className={'group-hover:stroke-black dark:group-hover:stroke-white w-6 h-6 transition-all duration-100'} />
             <div className='font-bold'>了解更多</div>
