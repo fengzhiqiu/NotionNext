@@ -4,7 +4,7 @@ import Catalog from './Catalog'
 import { InfoCard } from './InfoCard'
 import dynamic from 'next/dynamic'
 import Live2D from '@/components/Live2D'
-/** import { AnalyticsCard } from './AnalyticsCard' */
+import { AnalyticsCard } from './AnalyticsCard'
 import TouchMeCard from './TouchMeCard'
 import LatestPostsGroupMini from './LatestPostsGroupMini'
 import Image from 'next/image'
@@ -79,7 +79,6 @@ export default function SideRight(props) {
                 <Card className={'bg-white dark:bg-[#1e1e1e] dark:text-white'}>
                     <TagGroups tags={tagOptions} currentTag={currentTag} />
                     <hr className='mx-1 flex border-dashed relative my-4' />
-                    <AnalyticsCard {...props} />
                 </Card>
             </div>
 
