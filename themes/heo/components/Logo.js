@@ -1,7 +1,7 @@
 import { Home } from '@/components/HeroIcons'
 import LazyImage from '@/components/LazyImage'
-import Link from 'next/link'
 import { siteConfig } from '@/lib/config'
+import Link from 'next/link'
 
 const Logo = props => {
   const { siteInfo } = props
