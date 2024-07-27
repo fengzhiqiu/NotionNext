@@ -65,7 +65,7 @@ export function InfoCard(props) {
           )}*/}
         </div>
         {/* 第三个按钮 */}
-        <MoreButton />
+        {/* <MoreButton /> */}
       </div>
     </Card>
   )
