@@ -38,7 +38,7 @@ export default function SideRight(props) {
       <InfoCard {...props} className='w-72' />
 
       {/* 微信公众号二维码 */}
-      <div>
+      {/* <div>
           <Image
               src='/wx_qrcode.png'
               alt='欢迎扫码关注公众号'
@@ -50,7 +50,7 @@ export default function SideRight(props) {
                 borderRadius: '.75rem'
               }}
           />
-      </div>
+      </div> */}
 
       <div className='sticky top-20 space-y-4'>
         {/* 文章页显示目录 */}
