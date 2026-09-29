@@ -5,8 +5,8 @@ const CONFIG = {
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    // { title: '欢迎来到我的博客', url: 'https://blog.techins.xyz' },
-    // { title: '访问文档中心获取更多帮助', url: 'https://blog.techins.xyz' }
+    // { title: '欢迎来到我的博客', url: 'https://blog.dassr.com' },
+    // { title: '访问文档中心获取更多帮助', url: 'https://blog.dassr.com' }
   ],
 
   // 英雄区左右侧组件颠倒位置
@@ -17,10 +17,10 @@ const CONFIG = {
   // 英雄区(首页顶部大卡)
   HEO_HERO_TITLE_1: '分享科技、分享生活',
   HEO_HERO_TITLE_2: '思考与成长',
-  HEO_HERO_TITLE_3: 'TECHINS.XYZ',
+  HEO_HERO_TITLE_3: 'DASSR.COM',
   HEO_HERO_TITLE_4: '站长推荐',
   HEO_HERO_TITLE_5: '从0到1新手建站全攻略',
-  HEO_HERO_TITLE_LINK: 'https://techins.xyz/category/网站建设',
+  HEO_HERO_TITLE_LINK: 'https://dassr.com/category/网站建设',
 
   // 英雄区显示三个置顶分类
   HEO_HERO_CATEGORY_1: { title: '实用工具', url: '/tag/工具' },
