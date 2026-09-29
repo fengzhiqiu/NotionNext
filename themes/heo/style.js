@@ -166,9 +166,27 @@ const Style = () => {
       }
 
       ${themeConsoleStyle('heo', CONFIG)}
-  `}</style>
+
+      /* 普通卡片边框保持中性色，仅在 hover 时使用主题强调色。 */
+      #theme-heo [class~='border'],
+      #theme-heo [class*='border-gray-'] {
+        border-color: #e5e7eb;
+      }
+
+      .dark #theme-heo [class~='border'],
+      .dark #theme-heo [class*='border-gray-'] {
+        border-color: #374151;
+      }
+
+      #theme-heo .hover\:border-indigo-600:hover {
+        border-color: var(--heo-color-border);
+      }
+
+      .dark #theme-heo .dark\:hover\:border-yellow-600:hover {
+        border-color: var(--heo-color-border-dark);
+      }
+    `}</style>
   )
 }
 
 export { Style }
-
