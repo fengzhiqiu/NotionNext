@@ -17,25 +17,38 @@ const BLOG = {
   APPEARANCE_DARK_TIME: process.env.NEXT_PUBLIC_APPEARANCE_DARK_TIME || [18, 6], // 夜间模式起至时间，false时关闭根据时间自动切换夜间模式
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || '夏夜', // 您的昵称 例如 tangly1024
-  BIO: process.env.NEXT_PUBLIC_BIO || '一个普通的程序员🍚', // 作者简介
-  LINK: process.env.NEXT_PUBLIC_LINK || 'https://dassr.com', // 网站地址
-  KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || '科技Ins, techins, 网站建设, 实用工具, 博客', // 网站关键词 英文逗号隔开
-  TITLE: process.env.NEXT_PUBLIC_TITLE || '科技Ins', // Notion 未提供标题时的站点标题
+  BIO: process.env.NEXT_PUBLIC_BIO || '下班后开个小作坊', // 作者简介
+  LINK: process.env.NEXT_PUBLIC_LINK || 'https://blog.dassr.com', // 网站地址
+  BRAND_NAME: process.env.NEXT_PUBLIC_BRAND_NAME || 'D. A. 空间', // 统一品牌名称，不跟随旧 Notion 标题
+  BRAND_LOGO: process.env.NEXT_PUBLIC_BRAND_LOGO || '/brand/da-space-mark.png',
+  KEYWORDS:
+    process.env.NEXT_PUBLIC_KEYWORD ||
+    'dassr, 下班后开个小作坊, 夏夜, 独立开发者, NAS教程, Docker部署, 自动化工作流, AI工具应用, 个人服务器', // 网站关键词 英文逗号隔开
+  TITLE: process.env.NEXT_PUBLIC_TITLE || 'D. A. 空间', // Notion 未提供标题时的站点标题
   DESCRIPTION:
-    process.env.NEXT_PUBLIC_DESCRIPTION || '分享科技、分享生活、思考与成长',
-  BLOG_FAVICON: process.env.NEXT_PUBLIC_FAVICON || '/favicon.ico', // blog favicon 配置, 默认使用 /public/favicon.ico，支持在线图片，如 https://img.imesong.com/favicon.png
+    process.env.NEXT_PUBLIC_DESCRIPTION ||
+    '这里是“下班后开个小作坊”的技术主站与数字实验室。主理人夏夜在此记录个人数字基建的折腾日常，分享威联通 NAS 部署、Docker 容器化服务、自动化工作流构建以及 AI 效率工具的实战教程。用代码与脚本，构建高效的个人业务中枢。',
+  BLOG_FAVICON:
+    process.env.NEXT_PUBLIC_FAVICON || '/brand/da-space-mark-48.png', // blog favicon 配置
   PWA_ENABLE: process.env.NEXT_PUBLIC_PWA_ENABLE || false, // 是否启用 PWA 安装入口；也可在 Notion_Config 中配置 PWA_ENABLE=true
   PWA_NAME: process.env.NEXT_PUBLIC_PWA_NAME || '', // PWA 安装名称；默认读取站点标题，通常无需单独配置
   PWA_SHORT_NAME: process.env.NEXT_PUBLIC_PWA_SHORT_NAME || '', // PWA 短名称；默认读取站点标题，通常无需单独配置
-  PWA_ICON: process.env.NEXT_PUBLIC_PWA_ICON || '', // PWA 页面图标（apple-touch-icon / favicon 回退）；不控制 manifest 安装图标，manifest 使用内置尺寸合规的 PNG
-  PWA_ICON_192: process.env.NEXT_PUBLIC_PWA_ICON_192 || '', // 可选：覆盖 manifest 192x192 普通图标；须提供真实 192×192 尺寸的资源路径
-  PWA_ICON_512: process.env.NEXT_PUBLIC_PWA_ICON_512 || '', // 可选：覆盖 manifest 512x512 普通图标；须提供真实 512×512 尺寸的资源路径
-  PWA_ICON_192_MASKABLE: process.env.NEXT_PUBLIC_PWA_ICON_192_MASKABLE || '', // 可选：覆盖 manifest 192x192 maskable 图标；资源应留有足够安全边距
-  PWA_ICON_512_MASKABLE: process.env.NEXT_PUBLIC_PWA_ICON_512_MASKABLE || '', // 可选：覆盖 manifest 512x512 maskable 图标；资源应留有足够安全边距
+  PWA_ICON: process.env.NEXT_PUBLIC_PWA_ICON || '/brand/da-space-mark-192.png', // PWA 页面图标（apple-touch-icon / favicon 回退）
+  PWA_ICON_192:
+    process.env.NEXT_PUBLIC_PWA_ICON_192 || '/brand/da-space-mark-192.png',
+  PWA_ICON_512:
+    process.env.NEXT_PUBLIC_PWA_ICON_512 || '/brand/da-space-mark-512.png',
+  PWA_ICON_192_MASKABLE:
+    process.env.NEXT_PUBLIC_PWA_ICON_192_MASKABLE ||
+    '/brand/da-space-mark-192.png',
+  PWA_ICON_512_MASKABLE:
+    process.env.NEXT_PUBLIC_PWA_ICON_512_MASKABLE ||
+    '/brand/da-space-mark-512.png',
   PWA_THEME_COLOR: process.env.NEXT_PUBLIC_PWA_THEME_COLOR || '', // PWA 主题色
   PWA_BACKGROUND_COLOR: process.env.NEXT_PUBLIC_PWA_BACKGROUND_COLOR || '', // PWA 启动画面背景色
   BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '', // 备案号 闽ICP备XXXXXX
-  BEI_AN_LINK: process.env.NEXT_PUBLIC_BEI_AN_LINK || 'https://beian.miit.gov.cn/', // 备案查询链接，如果用了萌备等备案请在这里填写
+  BEI_AN_LINK:
+    process.env.NEXT_PUBLIC_BEI_AN_LINK || 'https://beian.miit.gov.cn/', // 备案查询链接，如果用了萌备等备案请在这里填写
   BEI_AN_GONGAN: process.env.NEXT_PUBLIC_BEI_AN_GONGAN || '', // 公安备案号，例如 '浙公网安备3xxxxxxxx8号'
 
   // RSS订阅

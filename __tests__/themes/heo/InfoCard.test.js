@@ -1,3 +1,7 @@
+jest.mock('@clerk/nextjs', () => ({
+  useUser: () => ({ isLoaded: true, isSignedIn: false, user: null })
+}))
+
 import {
   normalizeInfoCardGreetings,
   shouldUseInfoCardBlurAvatar

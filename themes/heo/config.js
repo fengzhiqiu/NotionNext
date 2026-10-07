@@ -5,6 +5,7 @@ const CONFIG = {
   HEO_HOME_BANNER_ENABLE: true,
 
   HEO_INFO_CARD_AVATAR_BLUR: true, // 文章详情页个人资料卡头像样式。true：显示为模糊装饰头像；false：与首页头像保持一致
+  HEO_INFO_CARD_AVATAR: '/brand/da-space-mark.png',
 
   HEO_COLOR_PRIMARY: '#4f65f0',
   HEO_COLOR_PRIMARY_HOVER: '#4f46e5',
@@ -34,12 +35,12 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: '分享科技、分享生活',
-  HEO_HERO_TITLE_2: '思考与成长',
-  HEO_HERO_TITLE_3: 'DASSR.COM',
+  HEO_HERO_TITLE_1: '下班后开个小作坊',
+  HEO_HERO_TITLE_2: '数字基建与效率实验',
+  HEO_HERO_TITLE_3: 'D. A. 空间',
   HEO_HERO_TITLE_4: '站长推荐',
   HEO_HERO_TITLE_5: '从0到1新手建站全攻略',
-  HEO_HERO_TITLE_LINK: 'https://dassr.com/category/网站建设',
+  HEO_HERO_TITLE_LINK: '/about',
   // 英雄区遮罩文字
   HEO_HERO_COVER_TITLE: '随便逛逛',
 
@@ -58,11 +59,10 @@ const CONFIG = {
 
   // 右侧个人资料卡牌欢迎语，点击可自动切换
   HEO_INFOCARD_GREETINGS: [
-    '你好！我是',
-    '🔍 分享与热心帮助',
-    '🏃 脚踏实地行动派',
-    '🏠 智能家居小能手',
-    '🤖️ 数码科技爱好者'
+    '独立开发者',
+    'NAS · Docker · 自动化',
+    'AI 工具实战',
+    '个人数字基建'
   ],
 
   // 个人资料底部按钮

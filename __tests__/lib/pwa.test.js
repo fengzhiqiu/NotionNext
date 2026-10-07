@@ -64,10 +64,26 @@ describe('PWA helpers', () => {
       scope: '/',
       display: 'standalone',
       icons: [
-        { src: '/icon-192.png', sizes: '192x192', purpose: 'any' },
-        { src: '/icon-512.png', sizes: '512x512', purpose: 'any' },
-        { src: '/icon-192-maskable.png', sizes: '192x192', purpose: 'maskable' },
-        { src: '/icon-512-maskable.png', sizes: '512x512', purpose: 'maskable' }
+        {
+          src: '/brand/da-space-mark-192.png',
+          sizes: '192x192',
+          purpose: 'any'
+        },
+        {
+          src: '/brand/da-space-mark-512.png',
+          sizes: '512x512',
+          purpose: 'any'
+        },
+        {
+          src: '/brand/da-space-mark-192.png',
+          sizes: '192x192',
+          purpose: 'maskable'
+        },
+        {
+          src: '/brand/da-space-mark-512.png',
+          sizes: '512x512',
+          purpose: 'maskable'
+        }
       ]
     })
   })
@@ -86,8 +102,16 @@ describe('PWA helpers', () => {
       icons: [
         { src: '/custom-192.png', sizes: '192x192', purpose: 'any' },
         { src: '/custom-512.png', sizes: '512x512', purpose: 'any' },
-        { src: '/icon-192-maskable.png', sizes: '192x192', purpose: 'maskable' },
-        { src: '/icon-512-maskable.png', sizes: '512x512', purpose: 'maskable' }
+        {
+          src: '/brand/da-space-mark-192.png',
+          sizes: '192x192',
+          purpose: 'maskable'
+        },
+        {
+          src: '/brand/da-space-mark-512.png',
+          sizes: '512x512',
+          purpose: 'maskable'
+        }
       ]
     })
   })
@@ -103,16 +127,18 @@ describe('PWA helpers', () => {
     expect(srcs).not.toContain('/another-icon.png')
     // Should use built-in defaults
     expect(srcs).toEqual([
-      '/icon-192.png',
-      '/icon-512.png',
-      '/icon-192-maskable.png',
-      '/icon-512-maskable.png'
+      '/brand/da-space-mark-192.png',
+      '/brand/da-space-mark-512.png',
+      '/brand/da-space-mark-192.png',
+      '/brand/da-space-mark-512.png'
     ])
   })
 
   // Regression: null inputs should not throw (default params only catch undefined, not null)
   it('getPwaConfig handles null siteInfo and notionConfig', () => {
-    expect(() => getPwaConfig({ siteInfo: null, notionConfig: null })).not.toThrow()
+    expect(() =>
+      getPwaConfig({ siteInfo: null, notionConfig: null })
+    ).not.toThrow()
     const result = getPwaConfig({ siteInfo: null, notionConfig: null })
     expect(result).toMatchObject({
       name: 'NotionNext',
@@ -122,7 +148,9 @@ describe('PWA helpers', () => {
   })
 
   it('buildPwaManifest handles null siteInfo and notionConfig', () => {
-    expect(() => buildPwaManifest({ siteInfo: null, notionConfig: null })).not.toThrow()
+    expect(() =>
+      buildPwaManifest({ siteInfo: null, notionConfig: null })
+    ).not.toThrow()
     const result = buildPwaManifest({ siteInfo: null, notionConfig: null })
     expect(result).toMatchObject({
       name: 'NotionNext',

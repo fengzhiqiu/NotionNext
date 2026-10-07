@@ -12,8 +12,8 @@ import { MenuListSide } from './MenuListSide'
  * @constructor
  */
 const SideBar = (props) => {
-  const { siteInfo } = props
   const router = useRouter()
+  const brandLogo = siteConfig('BRAND_LOGO', '/brand/da-space-mark.png')
   return (
         <div id='side-bar'>
             <div className="h-52 w-full flex justify-center">
@@ -21,7 +21,7 @@ const SideBar = (props) => {
                     <div onClick={() => { router.push('/') }}
                         className='justify-center items-center flex hover:rotate-45 py-6 hover:scale-105 dark:text-gray-100  transform duration-200 cursor-pointer'>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <LazyImage src={siteInfo?.icon} className='rounded-full' width={80} height={80} alt={siteConfig('AUTHOR')} />
+                        <LazyImage src={brandLogo} className='rounded-2xl' width={80} height={80} alt={siteConfig('BRAND_NAME', siteConfig('TITLE'))} />
                     </div>
                     <MenuGroupCard {...props} />
                 </div>

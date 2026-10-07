@@ -122,6 +122,8 @@ const SEO = props => {
   const TWITTER_CREATOR = siteConfig('TWITTER_CREATOR', '', NOTION_CONFIG)
 
   const AUTHOR = siteConfig('AUTHOR')
+  const BRAND_NAME = siteConfig('BRAND_NAME', siteInfo?.title)
+  const BRAND_LOGO = siteConfig('BRAND_LOGO', siteInfo?.icon)
   return (
     <Head>
       <link rel='icon' href={favicon} />
@@ -244,7 +246,16 @@ const SEO = props => {
         type='application/ld+json'
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
-            generateStructuredData(meta, siteInfo, url, image, AUTHOR, LINK)
+            generateStructuredData(
+              meta,
+              siteInfo,
+              url,
+              image,
+              AUTHOR,
+              LINK,
+              BRAND_NAME,
+              BRAND_LOGO
+            )
           )
         }}
       />
@@ -283,12 +294,14 @@ export const generateStructuredData = (
   url,
   image,
   author,
-  siteUrl
+  siteUrl,
+  brandName = siteInfo?.title,
+  brandLogo = siteInfo?.icon
 ) => {
   const baseData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: siteInfo?.title,
+    name: brandName,
     description: siteInfo?.description,
     url: siteUrl,
     author: {
@@ -297,10 +310,10 @@ export const generateStructuredData = (
     },
     publisher: {
       '@type': 'Organization',
-      name: siteInfo?.title,
+      name: brandName,
       logo: {
         '@type': 'ImageObject',
-        url: getAbsoluteImageUrl(siteInfo?.icon, siteUrl)
+        url: getAbsoluteImageUrl(brandLogo, siteUrl)
       }
     }
   }
@@ -322,10 +335,10 @@ export const generateStructuredData = (
       },
       publisher: {
         '@type': 'Organization',
-        name: siteInfo?.title,
+        name: brandName,
         logo: {
           '@type': 'ImageObject',
-          url: getAbsoluteImageUrl(siteInfo?.icon, siteUrl)
+          url: getAbsoluteImageUrl(brandLogo, siteUrl)
         }
       },
       mainEntityOfPage: {
