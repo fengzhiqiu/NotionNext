@@ -20,7 +20,8 @@ const BLOG = {
   BIO: process.env.NEXT_PUBLIC_BIO || '下班后开个小作坊', // 作者简介
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://blog.dassr.com', // 网站地址
   BRAND_NAME: process.env.NEXT_PUBLIC_BRAND_NAME || 'D. A. 空间', // 统一品牌名称，不跟随旧 Notion 标题
-  BRAND_LOGO: process.env.NEXT_PUBLIC_BRAND_LOGO || '/brand/da-space-mark.png',
+  BRAND_LOGO:
+    process.env.NEXT_PUBLIC_BRAND_LOGO || '/brand/da-space-mark-compact.png',
   KEYWORDS:
     process.env.NEXT_PUBLIC_KEYWORD ||
     'dassr, 下班后开个小作坊, 夏夜, 独立开发者, NAS教程, Docker部署, 自动化工作流, AI工具应用, 个人服务器', // 网站关键词 英文逗号隔开
@@ -29,21 +30,24 @@ const BLOG = {
     process.env.NEXT_PUBLIC_DESCRIPTION ||
     '这里是“下班后开个小作坊”的技术主站与数字实验室。主理人夏夜在此记录个人数字基建的折腾日常，分享威联通 NAS 部署、Docker 容器化服务、自动化工作流构建以及 AI 效率工具的实战教程。用代码与脚本，构建高效的个人业务中枢。',
   BLOG_FAVICON:
-    process.env.NEXT_PUBLIC_FAVICON || '/brand/da-space-mark-48.png', // blog favicon 配置
+    process.env.NEXT_PUBLIC_FAVICON || '/brand/da-space-mark-compact-48.png', // blog favicon 配置
   PWA_ENABLE: process.env.NEXT_PUBLIC_PWA_ENABLE || false, // 是否启用 PWA 安装入口；也可在 Notion_Config 中配置 PWA_ENABLE=true
   PWA_NAME: process.env.NEXT_PUBLIC_PWA_NAME || '', // PWA 安装名称；默认读取站点标题，通常无需单独配置
   PWA_SHORT_NAME: process.env.NEXT_PUBLIC_PWA_SHORT_NAME || '', // PWA 短名称；默认读取站点标题，通常无需单独配置
-  PWA_ICON: process.env.NEXT_PUBLIC_PWA_ICON || '/brand/da-space-mark-192.png', // PWA 页面图标（apple-touch-icon / favicon 回退）
+  PWA_ICON:
+    process.env.NEXT_PUBLIC_PWA_ICON || '/brand/da-space-mark-compact-192.png', // PWA 页面图标（apple-touch-icon / favicon 回退）
   PWA_ICON_192:
-    process.env.NEXT_PUBLIC_PWA_ICON_192 || '/brand/da-space-mark-192.png',
+    process.env.NEXT_PUBLIC_PWA_ICON_192 ||
+    '/brand/da-space-mark-compact-192.png',
   PWA_ICON_512:
-    process.env.NEXT_PUBLIC_PWA_ICON_512 || '/brand/da-space-mark-512.png',
+    process.env.NEXT_PUBLIC_PWA_ICON_512 ||
+    '/brand/da-space-mark-compact-512.png',
   PWA_ICON_192_MASKABLE:
     process.env.NEXT_PUBLIC_PWA_ICON_192_MASKABLE ||
-    '/brand/da-space-mark-192.png',
+    '/brand/da-space-mark-compact-192.png',
   PWA_ICON_512_MASKABLE:
     process.env.NEXT_PUBLIC_PWA_ICON_512_MASKABLE ||
-    '/brand/da-space-mark-512.png',
+    '/brand/da-space-mark-compact-512.png',
   PWA_THEME_COLOR: process.env.NEXT_PUBLIC_PWA_THEME_COLOR || '', // PWA 主题色
   PWA_BACKGROUND_COLOR: process.env.NEXT_PUBLIC_PWA_BACKGROUND_COLOR || '', // PWA 启动画面背景色
   BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '', // 备案号 闽ICP备XXXXXX

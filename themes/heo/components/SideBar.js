@@ -13,7 +13,10 @@ import { MenuListSide } from './MenuListSide'
  */
 const SideBar = (props) => {
   const router = useRouter()
-  const brandLogo = siteConfig('BRAND_LOGO', '/brand/da-space-mark.png')
+  const brandLogo = siteConfig(
+    'BRAND_LOGO',
+    '/brand/da-space-mark-compact.png'
+  )
   return (
         <div id='side-bar'>
             <div className="h-52 w-full flex justify-center">

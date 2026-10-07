@@ -65,22 +65,22 @@ describe('PWA helpers', () => {
       display: 'standalone',
       icons: [
         {
-          src: '/brand/da-space-mark-192.png',
+          src: '/brand/da-space-mark-compact-192.png',
           sizes: '192x192',
           purpose: 'any'
         },
         {
-          src: '/brand/da-space-mark-512.png',
+          src: '/brand/da-space-mark-compact-512.png',
           sizes: '512x512',
           purpose: 'any'
         },
         {
-          src: '/brand/da-space-mark-192.png',
+          src: '/brand/da-space-mark-compact-192.png',
           sizes: '192x192',
           purpose: 'maskable'
         },
         {
-          src: '/brand/da-space-mark-512.png',
+          src: '/brand/da-space-mark-compact-512.png',
           sizes: '512x512',
           purpose: 'maskable'
         }
@@ -103,12 +103,12 @@ describe('PWA helpers', () => {
         { src: '/custom-192.png', sizes: '192x192', purpose: 'any' },
         { src: '/custom-512.png', sizes: '512x512', purpose: 'any' },
         {
-          src: '/brand/da-space-mark-192.png',
+          src: '/brand/da-space-mark-compact-192.png',
           sizes: '192x192',
           purpose: 'maskable'
         },
         {
-          src: '/brand/da-space-mark-512.png',
+          src: '/brand/da-space-mark-compact-512.png',
           sizes: '512x512',
           purpose: 'maskable'
         }
@@ -127,10 +127,10 @@ describe('PWA helpers', () => {
     expect(srcs).not.toContain('/another-icon.png')
     // Should use built-in defaults
     expect(srcs).toEqual([
-      '/brand/da-space-mark-192.png',
-      '/brand/da-space-mark-512.png',
-      '/brand/da-space-mark-192.png',
-      '/brand/da-space-mark-512.png'
+      '/brand/da-space-mark-compact-192.png',
+      '/brand/da-space-mark-compact-512.png',
+      '/brand/da-space-mark-compact-192.png',
+      '/brand/da-space-mark-compact-512.png'
     ])
   })
 
